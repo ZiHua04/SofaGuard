@@ -1,0 +1,6 @@
+<!--pages/setting/setting.wxml-->
+<!-- <text>pages/setting/setting.wxml</text> -->
+<view>
+  <text>在此写一些设置</text>
+	<view>nihaohaha</view>
+</view>

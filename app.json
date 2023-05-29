@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/setting/setting",
+    "pages/index/contorl/contorl"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "沙发卫士SofaGuard",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/_home.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "control",
+        "iconPath": "image/control.png",
+        "selectedIconPath": "image/_contorl.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "setting",
+        "iconPath": "image/setting.png",
+        "selectedIconPath": "image/_setting.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

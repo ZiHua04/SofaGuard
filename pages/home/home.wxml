@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<view wx:if="{{flag}}" class = "recentimage">
+  <view class = "imagetitle">
+    <text style="position: relative; left: 248rpx; top: 0rpx">您的爱宠最新照片</text>
+  </view>
+  <view class = "imagebody">
+    <image src="../../image/dog.jpg" style="position: relative; left: 116rpx; top: 0rpx; width: 520rpx; height: 514rpx; display: inline-block; box-sizing: border-box"></image>
+  </view>
+
+</view>
+<view wx:if="{{flag}}">
+    <label for="MyPetState" style="width: 100%;">在过去的十五分钟中，您的爱宠正在：</label>
+    <label for="State">安静看家</label>
+</view>
+
+<view class = "switch">
+  <view class = "sectiontitle" style="position: relative; left: 202rpx; top: -1rpx">是否打开智能监测功能</view>
+  <view class = "switchbody">
+    <switch style="position: relative; left: 319rpx; top: 0rpx" bindchange="switchChangeHandler"/>
+  </view>
+</view>

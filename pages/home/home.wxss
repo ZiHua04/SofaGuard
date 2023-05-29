@@ -1,0 +1,5 @@
+.switch{
+  position: fixed;
+  bottom: 30rpx;
+  z-index: -1;
+}

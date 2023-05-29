@@ -1,0 +1,6 @@
+/* pages/index/contorl/contorl.wxss */
+button{
+  margin-block-end: 40rpx;
+
+}
+
