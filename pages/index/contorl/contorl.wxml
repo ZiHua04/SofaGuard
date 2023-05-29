@@ -5,6 +5,7 @@
   <view class = "monitor">
     <image src="../../../image/dog.jpg" style="height: 700rpx;width: 100%;" mode=""/>
   </view>
+  <button bindtap="button1">test1</button>
   <view class="control">
     <!-- <text>控制</text> -->
     <image 
