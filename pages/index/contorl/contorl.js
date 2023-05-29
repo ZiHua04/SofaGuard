@@ -5,7 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imageRightSrc:"../../../image/arrowright.png",
+    imageLeftSrc:"../../../image/arrowleft.png"
+  },
+  rightTouch:function(){
+    this.setData({
+      imageRightSrc:"../../../image/_arrowright.png"
+    });
+    wx.vibrateShort({
+      success: function () {
+        console.log('震动反馈成功')
+      }
+    })
+  },
+  rightTouchEnd:function(){
+    this.setData({
+      imageRightSrc:"../../../image/arrowright.png"
+    })
+  },
+  leftTouch:function(){
+    this.setData({
+      imageLeftSrc:"../../../image/_arrowleft.png"
+    });
+    wx.vibrateShort({
+      success: function () {
+        console.log('震动反馈成功')
+      }
+    })
+  },
+  leftTouchEnd:function(){
+    this.setData({
+      imageLeftSrc:"../../../image/arrowleft.png"
+    })
   },
 
   /**

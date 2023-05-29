@@ -2,13 +2,22 @@
 <!-- <text>pages/index/contorl/contorl.wxml</text> -->
 <view>
   <!-- <text>监控</text> -->
-  <view>
+  <view class = "monitor">
     <image src="../../../image/dog.jpg" style="height: 700rpx;width: 100%;" mode=""/>
   </view>
   <view class="control">
     <!-- <text>控制</text> -->
-    <button type="primary">控制1</button>
-    <button type="primary">控制2</button>
-    <button type="primary">控制3</button>
+    <image 
+            src="{{imageLeftSrc}}"
+            class="direction"
+            bindtouchstart="leftTouch"
+            bindtouchend="leftTouchEnd"
+            mode=""/>
+    <image 
+            src="{{imageRightSrc}}"
+            class="direction"
+            bindtouchstart="rightTouch"
+            bindtouchend="rightTouchEnd"
+            mode=""/>
   </view>
 </view>
