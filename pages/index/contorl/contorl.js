@@ -12,7 +12,9 @@ Page({
   },
   data: {
     imageRightSrc:"../../../image/arrowright.png",
-    imageLeftSrc:"../../../image/arrowleft.png"
+    imageLeftSrc:"../../../image/arrowleft.png",
+    uid:"7e5233d024874b63a5929338ee676385",
+    topic:"test"
   },
   rightTouch:function(){
     this.setData({
@@ -23,10 +25,44 @@ Page({
         console.log('震动反馈成功')
       }
     })
+    var that = this;
+    wx.request({
+      url: 'https://api.bemfa.com/api/device/v1/data/1/',
+      method:"POST",
+      data:{
+        uid:that.data.uid,
+        topic:that.data.topic,
+        msg:"right"
+      },
+      header:{
+        'content-type': "application/x-www-form-urlencoded"
+      },
+      success(res){
+        console.log(res.data);
+        console.log("向右转成功")
+      }
+    })
   },
   rightTouchEnd:function(){
     this.setData({
       imageRightSrc:"../../../image/arrowright.png"
+    })
+    var that = this;
+    wx.request({
+      url: 'https://api.bemfa.com/api/device/v1/data/1/',
+      method:"POST",
+      data:{
+        uid:that.data.uid,
+        topic:that.data.topic,
+        msg:"stop"
+      },
+      header:{
+        'content-type': "application/x-www-form-urlencoded"
+      },
+      success(res){
+        console.log(res.data);
+        console.log("停止成功")
+      }
     })
   },
   leftTouch:function(){
@@ -37,11 +73,45 @@ Page({
       success: function () {
         console.log('震动反馈成功')
       }
+    });
+    var that = this;
+    wx.request({
+      url: 'https://api.bemfa.com/api/device/v1/data/1/',
+      method:"POST",
+      data:{
+        uid:that.data.uid,
+        topic:that.data.topic,
+        msg:"left"
+      },
+      header:{
+        'content-type': "application/x-www-form-urlencoded"
+      },
+      success(res){
+        console.log(res.data);
+        console.log("向左转成功")
+      }
     })
   },
   leftTouchEnd:function(){
     this.setData({
       imageLeftSrc:"../../../image/arrowleft.png"
+    })
+    var that = this;
+    wx.request({
+      url: 'https://api.bemfa.com/api/device/v1/data/1/',
+      method:"POST",
+      data:{
+        uid:that.data.uid,
+        topic:that.data.topic,
+        msg:"stop"
+      },
+      header:{
+        'content-type': "application/x-www-form-urlencoded"
+      },
+      success(res){
+        console.log(res.data);
+        console.log("停止成功")
+      }
     })
   },
   button1:function()
