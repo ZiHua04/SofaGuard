@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <view wx:if="{{flag}}" class = "recentimage">
   <view class = "imagetitle">
-    <text style="position: relative; left: 248rpx; top: 0rpx">您的爱宠最新照片</text>
+    <text style="position: relative; left: 248rpx; top: 0rpx" >您的爱宠最新照片</text>
   </view>
   <view class = "imagebody">
     <image src="../../image/dog.jpg" style="position: relative; left: 116rpx; top: 0rpx; width: 520rpx; height: 514rpx; display: inline-block; box-sizing: border-box"></image>
@@ -9,8 +9,21 @@
 
 </view>
 <view wx:if="{{flag}}">
-    <label for="MyPetState" style="width: 100%;">在过去的十五分钟中，您的爱宠正在：</label>
-    <label for="State">安静看家</label>
+    <view class="intro">
+      <text>在过去的十五分钟里，您的爱宠正在：</text>
+    </view>
+    <view wx:if="{{MyPetState == '安静看家中'}}" class = "state">
+      <text class="state">{{MyPetState}}</text>
+      <view class="shake-slow">
+        <image src="../../image/silencedog.png" class="animate__animated"  mode="aspectFit"/>
+      </view>
+    </view>
+    <view wx:else="" class="state" >
+      <text class="state">{{MyPetState}}</text>
+      <view class="shake-slow">
+        <image class="img" src="../../image/silencedog.png" mode="aspectFit"/>
+      </view>
+    </view>
 </view>
 
 <view class = "switch">

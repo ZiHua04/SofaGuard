@@ -22,7 +22,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
   },
 
   /**
@@ -61,10 +61,12 @@ Page({
   },
   data:{
     switchChecked:false,
-    flag:false
+    flag:false,
+    MyPetState:"安静看家中",
   },
   switchChangeHandler:function(e){
     var value =e.detail.value;
     this.setData({flag:value})
-  }
+  },
+
 })

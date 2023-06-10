@@ -3,4 +3,10 @@
 <view>
   <text>在此写一些设置</text>
 	<view>nihaohaha</view>
+  <view>
+    <button 
+            type="primary"
+            bindtap="upimage"
+            >图片上传</button>
+  </view>
 </view>
