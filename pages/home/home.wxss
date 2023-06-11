@@ -3,13 +3,22 @@
   bottom: 30rpx;
   z-index: -1;
 }
+.imagebody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(235, 235, 235, 0.473);
+  
+}
 /* .recentimage{
   border-style:solid;
   border-color:sandybrown;
   background-color:rgba(224, 235, 68, 0.096);
 } */
 .state{
-  text-align: center
+  text-align: center;
+  /* background-color:bisque; */
+  height: 300rpx;
 }
 .intro{
   text-align: center;

@@ -11,6 +11,7 @@
   padding: 20rpx;
   box-sizing: border-box;
 }
+
 .direction{
   width: 40%;
   height: 100%;

@@ -61,7 +61,7 @@ Page({
   },
   data:{
     switchChecked:false,
-    flag:false,
+    flag:true,
     MyPetState:"安静看家中",
   },
   switchChangeHandler:function(e){

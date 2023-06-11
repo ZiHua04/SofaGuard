@@ -1,12 +1,44 @@
-<!--pages/setting/setting.wxml-->
-<!-- <text>pages/setting/setting.wxml</text> -->
-<view>
-  <text>在此写一些设置</text>
-	<view>nihaohaha</view>
-  <view>
-    <button 
-            type="primary"
-            bindtap="upimage"
-            >图片上传</button>
+<view class="page">
+  <!-- <view class="section">
+    <view class="title">
+      <text>个人资料</text>
+    </view>
+    <view class="option">
+      <text>用户名</text>
+      <input value="{{username}}" bindinput="onInputUsername"/>
+    </view>
+    <view class="option">
+      <text>密码</text>
+      <input value="{{password}}" type="password" bindinput="onInputPassword"/>
+    </view>
+  </view> -->
+
+  <view class="section">
+    <view class="title">
+      <text>消息通知</text>
+    </view>
+    <view class="option">
+      <text>新消息提醒</text>
+      <switch checked="{{newMessageNotification}}" color="#20a0ff" bindchange="onNewMessageNotificationChange"/>
+    </view>
+    <view class="option">
+      <text>声音提示</text>
+      <switch checked="{{soundNotification}}" color="#20a0ff" bindchange="onSoundNotificationChange"/>
+    </view>
+    <view class="option">
+      <text>震动提示</text>
+      <switch checked="{{vibrationNotification}}" color="#20a0ff" bindchange="onVibrationNotificationChange"/>
+    </view>
+  </view>
+
+  <view class="section">
+    <view hidden="{{isAdmin}}" class="title">
+      <text>切换账号</text>
+    </view>
+	<view hidden="{{!isAdmin}}" class="title">
+	  <text>管理员设置</text>
+	</view>
+	<button hidden="{{!isAdmin}}" type="primary" bindtap="onAddAccountClick">添加新用户</button>
+    <button hidden="{{!isAdmin}}" type="warn" bindtap="onDeleteAccountClick">删除当前用户</button>
   </view>
 </view>

@@ -4,7 +4,7 @@
     <text style="position: relative; left: 248rpx; top: 0rpx" >您的爱宠最新照片</text>
   </view>
   <view class = "imagebody">
-    <image src="../../image/dog.jpg" style="position: relative; left: 116rpx; top: 0rpx; width: 520rpx; height: 514rpx; display: inline-block; box-sizing: border-box"></image>
+    <image src="../../image/dog.jpg" style="width: 500rpx;"></image>
   </view>
 
 </view>
