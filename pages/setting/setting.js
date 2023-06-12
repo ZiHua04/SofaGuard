@@ -1,4 +1,5 @@
 // pages/setting/setting.js
+var app = getApp();
 Page({
 
   /**
