@@ -64,6 +64,7 @@ Page({
     flag:true,
     MyPetState:"安静看家中",
   },
+  
   switchChangeHandler:function(e){
     var value =e.detail.value;
     this.setData({flag:value})

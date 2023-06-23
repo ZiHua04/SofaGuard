@@ -10,7 +10,18 @@
   border-radius: 5rpx;
   box-shadow: 0 3rpx 5rpx rgba(0, 0, 0, .2);
 }
-
+.save{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 500rpx;
+}
+.savebutton{
+  width: 100px;
+  height: 50px;
+  margin-bottom: 30px;
+}
 .title {
   font-size: 32rpx;
   font-weight: bold;
@@ -34,7 +45,7 @@ button[type="primary"] {
   margin-right: 20rpx;
   height: 64rpx;
   line-height: 64rpx;
-  background-color: #20a0ff;
+  background-color: #3aff20;
   color: #fff;
   border-radius: 5rpx;
 }

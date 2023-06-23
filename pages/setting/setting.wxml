@@ -13,7 +13,7 @@
     </view>
     <view class="option">
       <text>手机号码</text>
-      <input value="{{}}"/>
+      <input type="text" bindinput="savephonenum" value="{{phonenum}}"/>
     </view>
   </view>
 
@@ -44,5 +44,8 @@
 	</view>
 	<button hidden="{{!isAdmin}}" type="primary" bindtap="onAddAccountClick">添加新用户</button>
     <button hidden="{{!isAdmin}}" type="warn" bindtap="onDeleteAccountClick">删除当前用户</button>
+  </view>
+  <view class = "save">
+    <button class="savebutton" style="height: auto;" type="primary" bindtap = "saveifo">保存设置</button>
   </view>
 </view>
