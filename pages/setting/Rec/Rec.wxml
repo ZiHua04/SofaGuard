@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <button type="primary" bindtap="start">开始录音</button>
+  <button type="primary" bindtap="suspend">录音暂停</button>
+  <button type="primary" bindtap="continue">继续录音</button>
+  <button type="primary" bindtap="stop">录音停止</button>
+  <button type="primary" bindtap="play">播放录音</button>
+</view>

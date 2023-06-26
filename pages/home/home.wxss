@@ -7,8 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(235, 235, 235, 0.473);
-  
+  background-color: rgba(235, 235, 235, 0.473); 
 }
 /* .recentimage{
   border-style:solid;

@@ -11,6 +11,11 @@ Page({
     uid: '7e5233d024874b63a5929338ee676385',
     topic: "phonenum",
   },
+  testRec(){
+    wx.navigateTo({
+      url: './Rec/Rec',
+    })
+  },
   saveifo(){
     this.data.client.publish(this.data.topic,this.data.phonenum);
   },

@@ -11,7 +11,28 @@
   padding: 20rpx;
   box-sizing: border-box;
 }
-
+.textimg{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #333;
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.icon{
+  height: 170rpx;
+  width: 170rpx;
+}
+.interact{
+  display: flex;
+  justify-content: space-between;
+}
 .direction{
   width: 40%;
   height: 100%;

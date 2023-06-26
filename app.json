@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/home/home",
     "pages/setting/setting",
-    "pages/index/contorl/contorl"
+    "pages/index/contorl/contorl",
+    "pages/setting/Rec/Rec"
   ],
   "window": {
     "backgroundTextStyle": "light",

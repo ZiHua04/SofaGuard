@@ -32,4 +32,28 @@
             bindtouchend="rightTouchEnd"
             mode=""/>
   </view>
+  <view class="interact">
+    <view class="textimg">
+      <image
+      src="../../../image/tease.png" 
+      class="icon"
+     />
+     <text class="text">远程互动</text>
+     <text></text>
+    </view>
+    <view class="textimg">
+      <image
+      src="../../../image/voice.png"
+      class="icon"
+      />
+      <text class="text">远程喊话</text>
+    </view>
+    <view class="textimg">
+      <image
+      src="../../../image/sofa.png"
+      class="icon"
+      />
+      <text class="text">破坏记录</text>
+    </view>
+  </view>
 </view>
