@@ -4,7 +4,9 @@
     <text style="position: relative; left: 248rpx; top: 0rpx" >您的爱宠最新照片</text>
   </view>
   <view class = "imagebody">
-    <image src="../../image/dog.jpg" style="width: 500rpx;"></image>
+    <image bindtouchstart="touchstart"
+           bindtouchend="touchend" 
+           src="{{imageUrl}}" style="width: 500rpx;"></image>
   </view>
 
 </view>

@@ -4,7 +4,52 @@ Page({
   /**
    * 页面的初始数据
    */
+  data:{
+    switchChecked:false,
+    flag:true,
+    MyPetState:"安静看家中",
+    imageUrl:""
+  },
+  onLoad: function() {
+    function formatTimestamp(timestamp) {
+      var date = new Date(timestamp * 1000 * 60);
+      var year = date.getFullYear();
+      var month = ("0" + (date.getMonth() + 1)).slice(-2);
+      var day = ("0" + date.getDate()).slice(-2);
+      var hours = ("0" + date.getHours()).slice(-2);
+      var minutes = ("0" + date.getMinutes()).slice(-2);
+    
+      return year + month + day + hours + minutes;
+    }
+    
+    this.setData({
+      imageUrl: "https://sofaguard.oss-cn-chengdu.aliyuncs.com/homeimg/test_"+ formatTimestamp(Math.floor(Date.now() / 1000 / 60))+".jpg" 
+    })
+    console.log(this.data.imageUrl);
+  },
   
+  touchstart(){
+    this.setData({
+      imageUrl:"../../image/home.png"
+    })
+  },
+  touchend(){
+    function formatTimestamp(timestamp) {
+      var date = new Date(timestamp * 1000 * 60);
+      var year = date.getFullYear();
+      var month = ("0" + (date.getMonth() + 1)).slice(-2);
+      var day = ("0" + date.getDate()).slice(-2);
+      var hours = ("0" + date.getHours()).slice(-2);
+      var minutes = ("0" + date.getMinutes()).slice(-2);
+    
+      return year + month + day + hours + minutes;
+    }
+    
+    this.setData({
+      imageUrl: "https://sofaguard.oss-cn-chengdu.aliyuncs.com/homeimg/test_"+ formatTimestamp(Math.floor(Date.now() / 1000 / 60))+".jpg" 
+    })
+    console.log(this.data.imageUrl);
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -59,11 +104,7 @@ Page({
   onShareAppMessage() {
 
   },
-  data:{
-    switchChecked:false,
-    flag:true,
-    MyPetState:"安静看家中",
-  },
+  
   
   switchChangeHandler:function(e){
     var value =e.detail.value;

@@ -49,4 +49,5 @@
     <button class="savebutton" style="height: auto;" type="primary" bindtap = "saveifo">保存设置</button>
   </view>
   <button bindtap="testRec">test</button>
+  <button bindtap="testCloud">Cloud</button>
 </view>

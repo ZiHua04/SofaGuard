@@ -16,6 +16,18 @@ Page({
       url: './Rec/Rec',
     })
   },
+  testCloud(){
+    wx.cloud.callFunction({
+      name: 'test',
+      success: res => {
+        console.log(res.result); // 获取到的图片URL
+      },
+      fail: err => {
+        console.error(err);
+      }
+    });
+    
+  },
   saveifo(){
     this.data.client.publish(this.data.topic,this.data.phonenum);
   },
